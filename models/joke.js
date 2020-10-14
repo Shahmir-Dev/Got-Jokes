@@ -3,5 +3,5 @@ module.exports = function(sequelize, DataTypes) {
       // Giving the Author model a name of type STRING
       joke: DataTypes.STRING
     });
-
+    return Jokes;
 };

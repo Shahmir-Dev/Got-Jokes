@@ -6,6 +6,8 @@ module.exports = function(sequelize, DataTypes) {
       pg13: DataTypes.STRING,
       r: DataTypes.STRING
     });
+    return Rating;
+};
   
 //     Author.associate = function(models) {
 //       // Associating Author with Posts
@@ -16,4 +18,3 @@ module.exports = function(sequelize, DataTypes) {
 //     };
   
 //     return Author;
-  };
