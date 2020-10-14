@@ -23,7 +23,7 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/g-rated-route")(app);
+require("./routes/html-routes")(app);
 // require("./routes/author-api-routes.js")(app);
 
 
