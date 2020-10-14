@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Blog - Express</title>
     <!-- Latest compiled and minified CSS & JS -->
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      media="screen"
+      title="no title"
+    />
     <script src="https://code.jquery.com/jquery.js"></script>
-
-</head>
-
-<body>
-    <h1>Got Jokes?</h1>
-    <button>G</button>
-    <button>PG</button>
-    <button>PG-13</button><br>
-    <form>Enter Joke Here</form>
-    <button>Submit</button>
-
-</body>
-
+  </head>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Got Jokes??</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down"></ul>
+    </div>
+  </nav>
+  <body>
+    <div class="container center">
+      <div class="row center rating-buttons">
+        <div class="col s1">
+          <a class="btn-floating btn-large waves-effect waves-light red"
+            ><i class="material-icons">G</i></a
+          >
+        </div>
+        <div class="col s1">
+          <a class="btn-floating btn-large waves-effect waves-light red"
+            ><i class="material-icons">PG</i></a
+          >
+        </div>
+        <div class="col s1">
+          <a class="btn-floating btn-large waves-effect waves-light red"
+            ><i class="material-icons">PG13</i></a
+          >
+        </div>
+        <div class="col s1">
+          <a class="btn-floating btn-large waves-effect waves-light red"
+            ><i class="material-icons">R</i></a
+          >
+        </div>
+      </div>
+      <form>Enter Joke Here</form>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </body>
 </html>
