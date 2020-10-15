@@ -3,13 +3,13 @@ const express = require("express");
 const router = express.Router();
 
 //Models
-const joke = require("../models/joke.js");
+const db = require("../models");
 
 //Routes
 router.get("/", function(req, res) {
-    joke.Jokes.findAll().then((index) => {
-        console.log(index)
-        res.render("index", {index})
+    db.Jokes.findAll().then((joke) => {
+        console.log(joke)
+        res.render("index", {joke: joke})
     }).catch((err) => {
         console.log(err);
         res.status(500);
