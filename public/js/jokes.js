@@ -3,6 +3,7 @@ $(document).ready(function () {
 
   $("#g-rated").click(function () {
     // To get a random dad joke
+    console.log("Clicked");
     giveMeAJoke.getRandomDadJoke(function (joke) {
       console.log(joke);
     });
