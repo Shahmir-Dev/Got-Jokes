@@ -7,13 +7,16 @@ const joke = require("../models/joke.js");
 
 //Routes
 router.get("/", function(req, res) {
-    joke.call(function(data) {
-        let hbsObject = {
-            jokes: data
-        };
-        console.log(hbsObject);
-        res.render("index", hbsObject)
-    });
+    joke.Jokes.findAll().then((index) => {
+        console.log(index)
+        res.render("index", {index})
+    }).catch((err) => {
+        console.log(err);
+        res.status(500);
+        res.json({
+          error: true,
+        });
+    })
 });
 
 
