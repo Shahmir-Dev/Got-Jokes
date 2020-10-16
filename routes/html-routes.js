@@ -17,10 +17,10 @@ module.exports = function (app) {
     //     // });
     // });
 
-    app.get("/", function (req, res) {
-        db.Jokes.findAll({ raw: true }).then((jokes) => {
+    app.get("/", function(req, res) {
+        db.Jokes.findAll({raw: true}).then((jokes) => {
             console.log(jokes);
-            res.render("index", { Jokes: jokes })
+            res.render("index", {Jokes: jokes})
 
         })
     });
