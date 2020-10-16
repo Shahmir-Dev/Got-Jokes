@@ -6,38 +6,36 @@
 </nav>
 
 <body>
-    <div class="container center" id=blog-container>
-      {{joke}}
-        <div class="row center rating-buttons">
-            <div class="col s1">
-                <a id="g-rated" href="/g" class=" btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">G</i></a
-          >
-          <h1></h1>
-        </div>
-        <div class="col s1 ">
-          <a id="pg-rated "  href="/pg" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">PG</i></a>
+      <div class="container center" id=blog-container>
+            <div class="row center rating-buttons">
+                <div class="col s1">
+                    <button id="g-rated" class=" btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">G</i></button>
+                    <h1></h1>
+                </div>
+                <div class="col s1 ">
+                    <a id="pg-rated " href="/pg" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">PG</i></a>
 
-            </div>
-            <div class="col s1">
-                <a id="pg13-rated" href="/pg13" class=" btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">PG13</i></a
+                </div>
+                <div class="col s1">
+                    <a id="pg13-rated" href="/pg13" class=" btn-floating btn-large waves-effect waves-light red "><i class="material-icons ">PG13</i></a
           >
         </div>
         <div class="col s1 ">
           <a id="r-rated " class="btn-floating btn-large waves-effect waves-light red "
             ><i class="material-icons ">R</i></a>
-                <br>
+                    <br>
+
+                </div>
             </div>
-        </div>
-        <div id="joke-section ">
-            <form>Enter Joke Here</form>
-            <button class="btn waves-effect waves-light " id="enter-joke" type="submit " name="action ">
+            <div id="joke-section"></div>
+            <div id="enter-joke ">
+                <form>Enter Joke Here</form>
+                <button class="btn waves-effect waves-light " type="submit " name="action ">
         Submit
         <i class="material-icons right ">send</i>
       </button>
+            </div>
         </div>
-    </div>
-    <div class="container">
-      {{!-- {{> joke/joke-block}} --}}
-    </div>
-    <script src="js/g-rated.js "></script>
+        <script src="js/g-rated.js"></script>
+    </body>
 </body>

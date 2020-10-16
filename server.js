@@ -29,10 +29,10 @@ app.set("view engine", "handlebars");
 
 // Routes
 // =============================================================
-// require("./routes/html-routes")(app);
-// require("./routes/author-api-routes.js")(app);
-var routes = require("./routes/html-routes.js");
-app.use(routes);
+require("./routes/html-routes")(app);
+require("./routes/joke-api-routes.js")(app);
+
+// app.use(routes);
 
 
 // Syncing our sequelize models and then starting our Express app
