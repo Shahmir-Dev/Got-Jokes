@@ -27,11 +27,12 @@ $(document).ready(function() {
             method: 'POST',
             body: new FormData(newuser),
             credentials: 'include',
-            url: "passport"
+            // url: "passport"
         });
 
         var newuser = document.querySelector('#newuser');
         var creds = new PasswordCredential(newuser);
+
         // Store the credentials.
         navigator.credentials.store(creds)
             .then(function(creds) {
@@ -79,8 +80,8 @@ $(document).ready(function() {
             console.log(data);
             jokeSection.empty();
             jokeSection.append($(`<h2>${data}</h2>`));
-
         });
+
     });
     $("#delete").click(function() {
         console.log("click");
