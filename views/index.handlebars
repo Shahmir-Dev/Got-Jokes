@@ -43,16 +43,36 @@
         <div></div>
         <ul class="collection with-header">
             <li class="collection-header">
+                <h4>User</h4>
             </li>
+            {{#each Jokes}}
             <li class="collection-item">
-                <div>Fav Jokes<a href="#!" class="secondary-content"><i id="userdelete"
+                <div>Jokes: {{joke}}--{{username}}<a href="#!" class="secondary-content"><i id="userdelete"
                             class="material-icons">delete</i></a></div>
+                {{!-- {{jokes}} --}}
             </li>
+            {{/each}}
             <h4></h4>
         </ul>
         </div>
-        <footer>
-            <h6 class="text">© 2020 Copyright Text</h6>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                </div>
+            </div>
         </footer>
 
         <!-- </form> -->

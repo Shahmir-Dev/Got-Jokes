@@ -1,8 +1,9 @@
+  
 {
     "development": {
         "username": "root",
-        "password": "AtlantaR32GtR",
-        "database": "jokesdb",
+        "password": "GTfulltime24",
+        "database": "jokeDB",
         "host": "127.0.0.1",
         "port": 3306,
         "dialect": "mysql"
