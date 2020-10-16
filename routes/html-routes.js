@@ -17,6 +17,13 @@ module.exports = function(app) {
         // });
     });
 
+    app.get("/", function(req, res) {
+        db.Jokes.findAll().then((jokes) => {
+            res.render("index", {jokes: jokes})
+            console.log(jokes);
+        })
+    });
+
 
 
 };
