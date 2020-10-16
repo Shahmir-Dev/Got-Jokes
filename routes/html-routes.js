@@ -1,8 +1,8 @@
 var path = require('path');
 var giveMeAJoke = require('give-me-a-joke');
 var jokes = require("../models/joke");
-var passport = require('passport'),
-    LocalStrategy = require('passport-local').Strategy;
+// var passport = require('passport'),
+//     LocalStrategy = require('passport-local').Strategy;
 // // Routes
 
 // =============================================================
