@@ -36,5 +36,14 @@ module.exports = function (app) {
             });
     });
 
+    app.delete("/api/Jokes/:id", (req, res) => {
+        db.Jokes.destroy({
+            where: {
+                id: req.params.id,
+            },
+        }).then((result) => {
+            res.end();
+        });
+    });
 
 };

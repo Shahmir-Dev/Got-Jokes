@@ -44,9 +44,9 @@
         <ul class="collection with-header">
             {{#each Jokes}}
             <li class="collection-item">
-                <div>Jokes: {{joke}}--{{username}}<a href="#!" class="secondary-content"><i id="userdelete"
-                            class="material-icons">delete</i></a></div>
-                {{!-- {{jokes}} --}}
+                <div>Jokes: {{joke}} {{username}}
+                    <a id="userdelete" class="waves-effect waves-light btn" method="delete">delete the joke</a>
+                </div>
             </li>
             {{/each}}
             <h4></h4>
