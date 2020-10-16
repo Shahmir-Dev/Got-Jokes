@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     const Jokes = sequelize.define("Jokes", {
         // Giving the Author model a name of type STRING
         joke: DataTypes.STRING,
-        rating: DataTypes.STRING
+        username: DataTypes.STRING
     });
     return Jokes;
 };
