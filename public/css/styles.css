@@ -1,3 +1,21 @@
-/* .rating-buttons {
-    padding-top: 200px;
-} */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ee6e73;
+  border-top: #ee6e73 solid;
+  border-width: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text {
+  color: #ffffe8;
+}
+
+.jokes-styles {
+  font-family: "Sansita Swashed", cursive;
+  font-weight: bold;
+}
