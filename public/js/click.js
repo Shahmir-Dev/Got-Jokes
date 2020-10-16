@@ -55,50 +55,16 @@ $(document).ready(function () {
             });
 
         });
-        $("#delete").click(function () {
-            console.log("click");
+        $("#userdelete").on("click", function () {
+            const idToDelete = $(this).data("id");
+            console.log("click bitch");
             $.ajax({
-                method: "GET",
-                url: "/randomjoke"
-            }).then(function (data) {
-                console.log(data);
-                const jokeSection = $("#joke-section");
-                jokeSection.empty();
-                jokeSection.append($(`<h2>${data}</h2>`));
-
+                url: `/api/Jokes/${idToDelete}`,
+                type: "DELETE"
+            }).then(function () {
+                location.reload();
             });
         });
-        $("#thumbup").click(function () {
-            console.log("click");
-        });
-        $("#thumbdown").click(function () {
-            console.log("click");
-        });
-        $("#userfav").click(function () {
-            console.log("click");
-        });
-        $("#userdelete").click(function () {
-            console.log("click");
-        });
-        $("#userfav1").click(function () {
-            console.log("click");
-        });
-        $("#userdelete1").click(function () {
-            console.log("click");
-        });
-        $("#userfav2").click(function () {
-            console.log("click");
-        });
-        $("#userdelete2").click(function () {
-            console.log("click");
-        });
-        $("#userfav3").click(function () {
-            console.log("click");
-        });
-        $("#userdelete4").click(function () {
-            console.log("click");
-        });
-
     });
 
 });
