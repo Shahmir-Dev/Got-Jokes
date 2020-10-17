@@ -1,64 +1,65 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Got Jokes??</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down"></ul>
+    </div>
+</nav>
+
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Got Jokes??</a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down"></ul>
-        </div>
-    </nav>
+    <div class="container center" id=blog-container>
+        <br>
+        <div class="row center">
+            <button id="g-rated" class="waves-effect waves-light btn">Got Jokes?!</i></button>
+            <h3></h3>
 
-    <body>
-        <div class="container center" id=blog-container>
-            <br>
-            <div class="row center">
-                <button id="g-rated" class="waves-effect waves-light btn">Got Jokes?!</i></button>
-                <h3></h3>
-
-            </div class="row right">
-            <button class="material-icons" id="like">favorite</button>
-            <!-- <button class="material-icons" id="delete">delete</button> -->
+        </div class="row right">
+        <button class="material-icons" id="like">favorite</button>
+        <!-- <button class="material-icons" id="delete">delete</button> -->
+    </div>
+    <br>
+    <div id="joke-section"></div>
+    <br>
+    <br>
+    <div id="enter-joke " class="row center">
+        <div class="row center">
+            <input id="submit-joke" type="text" class="validate">
+            <label for="submit-joke">Enter Your Joke</label>
         </div>
-        <br>
-        <div id="joke-section"></div>
-        <br>
-        <br>
-        <div id="enter-joke " class="row center">
+        <div class="row center">
+            <input id="username" type="text" class="validate">
+            <label for="username">username</label>
             <div class="row center">
-                <input id="submit-joke" type="text" class="validate">
-                <label for="submit-joke">Enter Your Joke</label>
-            </div>
-            <div class="row center">
-                <input id="username" type="text" class="validate">
-                <label for="username">username</label>
-                <div class="row center">
-                    <br>
-                    <br>
-                    <br>
-                    <button id="newuser" class="waves-effect waves-light btn" type="submit" method="post">post a
-                        joke</i></button>
-                    <br>
-                    <br>
-                </div>
+                <br>
+                <br>
+                <br>
+                <button id="newuser" class="waves-effect waves-light btn" type="submit" method="post">post a
+                    joke</i></button>
+                <br>
+                <br>
             </div>
         </div>
-        <div></div>
+    </div>
+    <div class="container jokes-div">
         <ul class="collection with-header">
             {{#each Jokes}}
-            <li class="collection-item">
-                <div>Jokes: {{joke}} {{username}}
-                    <a id="userdelete" class="waves-effect waves-light btn" method="delete">delete the joke</a>
+
+            <li>
+                <div> Jokes: {{joke}} {{username}}
+                    <a id="userdelete" class="waves-effect waves-light btn right" method="delete">delete the
+                        joke</a>
                 </div>
             </li>
             {{/each}}
             <h4></h4>
         </ul>
+    </div>
+    </div>
+    <footer>
+        <div>
+            <h6 class="text"> © 2020 Copyright Text</h6>
         </div>
-        <footer>
-            <div>
-                <h6 class="text"> © 2020 Copyright Text</h6>
-            </div>
-        </footer>
-        <script src="js/click.js"></script>
-    </body>
+    </footer>
+    <script src="js/click.js"></script>
 </body>
 
 {{!-- conflects --}}
