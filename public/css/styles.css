@@ -1,5 +1,5 @@
 footer {
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   height: 50px;
@@ -9,6 +9,10 @@ footer {
   border-width: 5px;
   text-align: center;
   margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
 }
 
 .text {

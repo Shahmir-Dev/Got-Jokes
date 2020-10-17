@@ -6,13 +6,13 @@
 </nav>
 
 <body>
-    <div class="container center" id=blog-container>
+    <div class="container center" id="blog-container">
         <br>
-        <div class="row center">
+        <div class="row center jokes-text">
             <button id="g-rated" class="waves-effect waves-light btn">Got Jokes?!</i></button>
             <h3></h3>
 
-        </div class="row right">
+        </div>
         <button class="material-icons" id="like">favorite</button>
         <!-- <button class="material-icons" id="delete">delete</button> -->
     </div>
@@ -43,14 +43,12 @@
         <ul class="collection with-header">
             {{#each Jokes}}
 
-            <li>
-                <div> Jokes: {{joke}} {{username}}
-                    <a id="userdelete" class="waves-effect waves-light btn right" method="delete">delete the
+            <li class="collection-item">
+                Jokes: {{joke}} {{username}}
+                    <a type="submit" id="userdelete" class="waves-effect waves-light btn right" method="delete">delete the
                         joke</a>
-                </div>
             </li>
             {{/each}}
-            <h4></h4>
         </ul>
     </div>
     </div>
