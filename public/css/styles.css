@@ -19,3 +19,9 @@ footer {
   font-family: "Sansita Swashed", cursive;
   font-weight: bold;
 }
+
+.jokes-div {
+  overflow: scroll;
+  margin-bottom: 1%;
+  float: end;
+}
