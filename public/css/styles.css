@@ -8,7 +8,7 @@ footer {
   border-top: #ee6e73 solid;
   border-width: 5px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20%;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
 }
 
 .jokes-div {
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 1%;
   float: end;
 }
