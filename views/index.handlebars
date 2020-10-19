@@ -5,7 +5,7 @@
     </div>
 </nav>
 
-<body>
+<body style="background-image: url(https://i.pinimg.com/originals/0a/94/46/0a9446e9eb1c2343888253bd20d751fc.jpg)">
     <div class="container center" id="blog-container">
         <br>
         <div class="row center jokes-text">
@@ -13,8 +13,6 @@
             <h3></h3>
 
         </div>
-        <button class="material-icons" id="like">favorite</button>
-        <!-- <button class="material-icons" id="delete">delete</button> -->
     </div>
     <br>
     <div id="joke-section"></div>
@@ -44,7 +42,8 @@
             {{#each Jokes}}
 
             <li class="collection-item">
-                Jokes: {{joke}} {{username}}
+                UserName: {{username}}
+                Jokes: {{joke}}
                 <a type="submit" id="userdelete" class="waves-effect right btn-small" method="delete">delete
                     the
                     joke</a>
