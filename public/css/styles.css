@@ -29,9 +29,26 @@ h2 {
   margin-bottom: 1%;
   float: end;
 }
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+#submit-joke {
+  color: white;
+}
+
+#username {
+  color: white;
+}
+
+#enter-joke {
+  color: white;
+}
+
+#uname {
+  color: white;
 }
